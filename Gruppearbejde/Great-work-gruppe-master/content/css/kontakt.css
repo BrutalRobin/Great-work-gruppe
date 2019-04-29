@@ -1,0 +1,76 @@
+input[type=text], input[type=email], textarea {
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    padding: 5px;
+    /* box-shadow: inset 0px 0px 1px #ccc; */
+    width: 50%;
+    margin-top: 8px;
+    font-size: 11px;
+    
+ }
+ textarea{
+     width: 100%;
+     min-height: 100px;
+     resize: none;
+ }
+  
+  button {
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    padding: 6px;
+    box-shadow: inset 0px 0px 1px #ccc; }
+  
+  fieldset {
+    border: solid 1px #516797;
+    /* box-shadow: 0px 2px 6px 1px #ccc; */
+    border-radius: 3px;
+    padding: 20px;
+    width: 100%;
+    font-size: 12px;
+    color: #516797;
+    
+    
+ }
+  
+  label {
+    width: 200px; 
+    margin-right: 2em;
+}
+    
+  
+  input[type=text].field-error, input[type=email].field-error {
+    border-color: #f0005e; }
+  
+  textarea.field-error {
+    border-color: #f0005e; }
+  
+  .text-error {
+    font-size: 0.8rem;
+    color: #f0005e; }
+
+legend{
+    font-size: 13px;
+}
+form{
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+#fortryd{
+margin-left: 350px;
+}
+#send{
+margin-right: -150px;
+}
+
+.contactform, span{
+    margin-left: 55px;
+    font-size: 13px;
+}
+#spanboldtext1{
+    font-weight: bold;
+}
+#spanboldtext2{
+    font-weight: bold;
+}
+

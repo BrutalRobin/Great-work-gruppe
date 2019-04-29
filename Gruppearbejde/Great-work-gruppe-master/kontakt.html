@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/kontakt.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="desktopNavigation">
+        <figure id="logo">
+            <img src="content/images/logo.jpg" alt="asd">
+        </figure>
+        <ul>
+            <li><a href="index.html">Start</a></li>|
+            <li><a href="#">Arbejdsmiljø</a></li>|
+            <li><a href="#">Ydelser</a></li>|
+            <li><a href="#">Cases</a></li>|
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <input type="search" name="search" id="search">
+            <label for="search" class="fas fa-search"></label>
+        </ul>
+    </nav>
+
+    <div class="gridwrapper">
+
+        <div class="block1">
+            <p>Kontakt os eller aftal en samtale med en af vore konsulenter</p>
+        </div>
+
+
+        <div class="blocka">
+            <img id="imgthegang" src="../Great-work-gruppe-master/_FILES/Gfx/Thegang.jpg" alt="">
+        </div>
+
+        <div class="blockb">
+            <p class="linebreak">Kontaktinformationer</p>
+            
+            <p>Great Work Place</p>
+            <p>Lumbalgade 66</p>
+            <p class="linebreak">9000 Aalorg</p>
+
+            <p>Tlf. +45 9988 7766</p>
+            <p class="linebreak">Email: nopalm@mail.dk</p>
+
+            <p>Du kan kontakte udvalgte konsulrenter dagligt mellem</p>
+            <p class="linebreak">kl. 09.00 - 16.00</p>
+
+            <p>Allerede kunde?</p>
+            <p class="linebreak">Kontakt din konsultent på alle hverdage 07.00 - 21.00</p>
+   
+            <p>Udfyld kontaktformular:</p>
+            <p>Du kan altid kontakt en af vore medarbejdere ved</p>
+            <p>at udfylde og sende en forespørgsel til kundeservice på </p>
+            <p>nedenstående kontaktformular</p>
+        </div>
+
+        <div class="blockc">
+           <img id="imgpen" src="../Great-work-gruppe-master/_FILES/Gfx/Contacts-Call.jpg" alt="">
+</div>
+<div class="blockd">
+        
+        <form id="contactform" method="POST">
+                <fieldset>
+                    <legend>Udfyld kontaktformular</legend>
+                    
+                    <input required data-validate="onlyalpha" type="text" name="firstname" id="firstname" placeholder="Fornavn" value="" /><span id="spanboldtext1">Jeg vil gerne hører om</span><br />
+                    <input required data-validate="onlyalpha" type="text" name="lastname" id="lastname" placeholder="Efternavn" value="" />
+                    <span><input type="checkbox" name="Jegvilgernehørerom1" id="arbejdespladsvurderinger">
+                        <label for="Arbejdespladsvurderinger">Arbejdespladsvurderinger</label></span><br />
+                    <input required data-validate="onlyalpha onlynum" type="text" name="lastname" id="adress" placeholder="Adresse" value="" />
+                    <span><input type="checkbox" name="Jegvilgernehørerom2" id="sikkerhedorganisation">
+                        <label for="Sikkerhedorganisation">Sikkerhedorganisation</label></span><br />
+                    <input required data-validate="onlyalpha" type="text" name="lastname" id="city" placeholder="By" value="" />
+                    <span><input type="checkbox" name="Jegvilgernehørerom3" id="nystartetvirksomhed">
+                        <label for="Nystartetvirksomhed">Nystartet Virksomhed</label></span><br />
+                    <input required data-validate="onlynum" type="text" name="lastname" id="postcode" placeholder="Postnummer" value="" /><span id="spanboldtext1">Jeg er:</span><br />
+                    <input required  data-validate="validemail" type="text" name="email" id="email" placeholder="Email" value="" />
+                    <span><input type="radio" name="jeger" id="virksomhedsleder">
+                        <label for="Virksomhedsleder">Virksomheds leder</label></span><br />
+                    <input required  data-validate="onlynum" type="text" name="phone" id="phone" placeholder="Telefonnummer" value="" />
+                    <span><input type="radio" name="jeger" id="sikkerhedsrepræsentant">
+                        <label for="Sikkerhedsrepræsentant">Sikkerhedsrepræsentant</label></span><br />
+                    
+                    
+                    <textarea required name="comment" id="comment" placeholder="Indtast kommentar"></textarea>
+                    
+                    <h4>Tilmeld nyhedsbrev</h4>
+                    <br />
+                    
+                    <input type="radio" name="tak" id="jatak">
+                    <label for="Jatak">Ja tak</label>
+                    
+                    <input type="radio" name="tak" id="nejtak">
+                    <label for="Nejtak">Nej tak</label>
+                    
+                    <button id="cancel" type="button">Fortryd</button>
+                    <button id="send" type="button" onclick="validate(this.form)">Send</button>
+                    
+                </fieldset>
+            </form>
+</div>
+
+
+
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="trivsel">
+                <h3>Trivsel</h3>
+                <a href="#">Godt psykisk arbejdsmiljø</a>
+                <a href="#">Stress og stresshåndtering</a>
+                <a href="#">Samarbejde og relationer</a>
+                <a href="#">Mobning på arbejdspladsen</a>
+                <a href="#">Konflikter på arbejdspladsen</a>
+                <a href="#">Trusler og vold på arbejdspladsen</a>
+            </div>
+            <div class="indeklima">
+                <h3>Indeklima</h3>
+                <a href="#">Generende støj</a>
+                <a href="#">Kulde og træk</a>
+                <a href="#">Luftkvalitet</a>
+                <a href="#">Arbejdslys</a>
+                <a href="#">Rengøring</a>
+                <a href="#">Fugt og skimmelsvampe</a>
+            </div>
+            <div class="dinarbejdsplads">
+                <h3>Din arbejdsplads</h3>
+                <a href="#">Daginstitution</a>
+                <a href="#">Kontor</a>
+                <a href="#">Undervisning</a>
+                <a href="#">Sygehus</a>
+                <a href="#">Privat praksis</a>
+                <a href="#">Forskning</a>
+            </div>
+            <div class="arbejdsmiljøarbejdet">
+                <h3>Arbejdsmiljøarbejdet:</h3>
+                <a href="#">Arbejdsmiljøarbejdet</a>
+                <a href="#">APV - Arbejdspladsvurdering</a>
+                <a href="#">Arbejdsulykker - et overblik</a>
+                <a href="#">Arbejdsmiljøorganisationen</a>
+                <a href="#">Metoder i arbejdsmiljøarbejdet</a>
+                <a href="#">UMV - Miljøvurdering</a>
+            </div>
+        </div>
+        <div class="social">
+            <figure>
+                <img src="content/images/facebook.png" alt="facebook logo">
+            </figure>
+            <figure>
+                <img src="content/images/twitter.png" alt="twitter logo">
+            </figure>
+        </div>
+    </footer>
+    <script src="content/js/main.js"></script>
+    <script src="content/css/validate.js"></script>
+</body>
+
+</html>
