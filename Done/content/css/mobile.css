@@ -1,0 +1,90 @@
+/* Mobile navigation disable on desktop */
+#hambrugerMenu {
+    display: none;
+}
+#mobileNavigation {
+    display: none;
+}
+
+/* ------------------------------ */
+/* ---------Media querys--------- */
+/* ------------------------------ */
+@media only screen and (max-width: 800px) {
+    /* Mobile navigation */
+    #mobileNavigation {
+        display: block;
+    }
+    #hambrugerMenu {
+        position: fixed;
+        right: 0.2em;
+        top: 0.2em;
+        display: block;
+        color: orangered;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    #hambrugerMenuClose {
+        position: absolute;
+        right: 0.2em;
+        top: 0.2em;
+        display: block;
+        color: orangered;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    .mobileNavigationClosed {
+        position: absolute;
+        display: block;
+        background-color: #366171;
+        padding: 1em;
+        right: 0;
+        left: 0;
+        top: -100%;
+    }
+    .mobileNavigationOpen {
+        position: fixed;
+        display: block;
+        background-color: #366171;
+        padding: 1em;
+        right: 0;
+        left: 0;
+        transition: all 350ms ease-in-out;
+        -webkit-transition: all 350ms ease-in-out;
+        -moz-transition: all 350ms ease-in-out;
+        -ms-transition: all 350ms ease-in-out;
+        -o-transition: all 350ms ease-in-out;
+    }
+    #mobileNavigation #logo {
+        text-align: center;
+    }
+    #mobileNavigation ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+    #mobileNavigation ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    #mobileNavigation #search {
+        display: block;
+        width: 90%;
+        height: 40px;
+        margin: 1em auto;
+        padding: 0.2em;
+    }
+    /* Desktop navigation */
+    #desktopNavigation {
+        display: none;
+    }
+    /* Footer */
+    .footer-content {
+        display: block;
+    }
+    .trivsel, .indeklima, .dinarbejdsplads, .arbejdsmiljøarbejdet {
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+}

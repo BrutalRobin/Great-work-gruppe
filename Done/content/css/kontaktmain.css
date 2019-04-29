@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow-X: hidden;
+}
+#desktopNavigation {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    min-height: 200px;
+}
+#desktopNavigation #logo {
+    margin-left: 25%;
+}
+#desktopNavigation ul{
+    font-weight: 100;
+    justify-self: end;
+    align-self: end;
+    margin-right: 15%;
+    color: white;
+}
+#desktopNavigation ul li {
+    display: inline-block;
+    padding: 1em 1em;
+}
+
+#desktopNavigation ul li a{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+.gridwrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+.gridwrapper .content {
+    grid-column: 2 / 14;
+    background: white;
+}
+footer {
+    padding: 1em 4em 0 4em;
+    width: 100%;
+    background-color: #366171;
+    min-height: 200px;
+}
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-content h3 {
+    color: white;
+}
+.footer-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.5em 0;
+    font-weight: 100;
+}
+.social {
+    margin-top: 2em;
+    text-align: center;
+}
+.social figure {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+/* Kontaktsiden */
+.linebreak{
+    margin-bottom: 1.5em;
+}
+
+#imgthegang{
+    width: 57%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    grid-column: 2 / 8;
+}
+#imgpen{
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-column: 2 / 7;
+    height: 485px;
+    object-fit: cover;
+}
+
+.block1{
+    margin-top: 2em;
+    grid-column: 2 / 14;
+    grid-row: 1;
+    margin-bottom: 2em;
+}
+
+.blocka{
+    background-color: orangered;
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 14;
+    grid-row: 2;
+    padding: 4px;
+}
+
+.blockb{
+    grid-column: 9 / 14;
+    grid-row: 2;
+}
+.blockb p{
+    margin-top: 10px;
+    color: white;
+    /* font-size: 11px; */
+}
+
+.blockc{
+    grid-column: 2 / 7;
+    grid-row: 3;
+}
+
+.blockd{
+    grid-column: 7 / 14;
+    grid-row: 3;
+    margin-top: 10px;
+}
+
+.blocke{
+    grid-column: 1 / 14;
+    grid-row: 4;
+    background-color: orangered;
+    
+}
+
+.blocke, h3, p{
+    margin-left: 35px;
+    font-size: 16px;
+    color: white;
+}
+
+.blocke > #svend{
+    width: 23%;
+    grid-column: 1 / 7;
+    margin-left: 35px;
+    margin-top: 5px;
+    
+}
+
+.blocke > #sandy{
+    width: 23%;
+    grid-column: 8 / 10;
+    margin-left: 1px;
+}
+
+.blocke > #erik{
+    width: 23%;
+    grid-column: 10 / 12;
+    margin-left: 1px;
+}
+
+.blocke > #anne{
+    width: 23%;
+    grid-column: 12 / 15;
+    margin-left: 1px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #imgthegang{
+        width: 100%;
+        grid-column: 2 / 14;
+        margin: 0;
+    }
+    .blocka {
+        grid-row: 2 / span 3;
+    }
+    .blockb{
+        grid-column: 2 / 14;
+        grid-row: 5;
+        background-color: orangered;
+    }
+    .blockc {
+        grid-column: 2 / 14;
+        grid-row: 6;
+    }
+    .blockd {
+        grid-column: 2 / 14;
+        grid-row: 7;
+        margin-bottom: 1em;
+    }
+    #imgpen {
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+
+
+
+
+

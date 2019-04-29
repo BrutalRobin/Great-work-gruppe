@@ -1,0 +1,361 @@
+/* ------------------------------ */
+/* ------------Globals----------- */
+/* ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow-X: hidden;
+}
+/* Mobile navigation disable on desktop */
+#hambrugerMenu {
+    display: none;
+}
+#mobileNavigation {
+    display: none;
+}
+/* Desktop navigation */
+#desktopNavigation {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    min-height: 200px;
+}
+#desktopNavigation #logo {
+    margin-left: 25%;
+}
+#desktopNavigation ul{
+    font-weight: 100;
+    justify-self: end;
+    align-self: end;
+    margin-right: 15%;
+    color: white;
+}
+#desktopNavigation ul li {
+    display: inline-block;
+    padding: 1em 1em;
+}
+
+#desktopNavigation ul li a{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+/* Main grid */
+.gridwrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 1em;
+}
+/* First content */
+.first-content-container {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-column: 2 / 14;
+    background-color: #5f93aa;
+}
+.first-content-text  {
+    padding: 1em;
+}
+.first-content-text h2 {
+}
+.first-content-text p {
+    margin: 0.2em 0 2em 0;
+}
+.first-content-text h2, .first-content-text p {
+    color: white;
+}
+.first-content-container figure {
+    position: relative;
+    padding: 1em;
+}
+.first-content-container figure img {
+    width: 100%;
+}
+.first-content-container figcaption {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 350px;
+    left: 10%;
+    background-color: rgba(180, 59, 18, 0.774);
+    transform: translateY(-250px);
+    -webkit-transform: translateY(-250px);
+    -moz-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
+    -o-transform: translateY(-250px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.first-content-container #figText {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.8vw;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.first-content-container #figText span {
+    font-weight: bold;
+}
+/* Second content */
+.second-content-container {
+    grid-column: 2 / 14;
+    background-color: #dc6036;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 33%;
+}
+.second-content-text {
+    color: white;
+    padding: 1em;
+    grid-column: 1 / 5;
+}
+.second-content-text p{ 
+    margin: 0 0 2em 0;
+}
+#second-rightside-image {
+    padding: 1em;
+    grid-column: 5;
+    grid-row: 1 / span 2;
+}
+#second-rightside-image figure img {
+    width: 100%;
+} 
+
+#second-rightside-image img {
+    width: 100%;
+}
+.second-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1 / 5;
+}
+.second-image-grid figure {
+    position: relative;
+    padding: 1em;
+    height: 100%;
+}
+.second-image-grid figure img {
+    width: 100%;
+    height: 100%;
+}
+.second-image-grid figcaption {
+    margin: 1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(62, 111, 132, 0.507);
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.second-image-grid figcaption h2 {
+    font-weight: 100;
+}
+/* Third content */
+.third-content-container {
+    grid-column: 2 / 14;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    margin: 1em;
+}
+.third-content-container p {
+    line-height: 1.8em;
+}
+/* footer */
+footer {
+    padding: 1em 4em 0 4em;
+    width: 100%;
+    background-color: #366171;
+    min-height: 200px;
+}
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-content h3 {
+    color: white;
+}
+.footer-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.5em 0;
+    font-weight: 100;
+}
+.social {
+    margin-top: 2em;
+    text-align: center;
+}
+.social figure {
+    display: inline-block;
+    padding: 0.5em;
+}
+/* ------------------------------ */
+/* ---------Media querys--------- */
+/* ------------------------------ */
+@media only screen and (max-width: 800px) {
+    /* Mobile navigation */
+    #mobileNavigation {
+        display: block;
+    }
+    #hambrugerMenu {
+        z-index: 10;
+        position: fixed;
+        right: 0.2em;
+        top: 0.2em;
+        display: block;
+        color: orangered;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    #hambrugerMenuClose {
+        position: absolute;
+        right: 0.2em;
+        top: 0.2em;
+        display: block;
+        color: orangered;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    .mobileNavigationClosed {
+        position: absolute;
+        display: block;
+        background-color: #366171;
+        padding: 1em;
+        right: 0;
+        left: 0;
+        top: -100%;
+    }
+    .mobileNavigationOpen {
+        z-index: 10;
+        position: fixed;
+        display: block;
+        background-color: #366171;
+        padding: 1em;
+        right: 0;
+        left: 0;
+    }
+    #mobileNavigation #logo {
+        text-align: center;
+    }
+    #mobileNavigation ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+    #mobileNavigation ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    #mobileNavigation #search {
+        display: block;
+        width: 90%;
+        height: 40px;
+        margin: 1em auto;
+        padding: 0.2em;
+    }
+    /* Desktop navigation */
+    #desktopNavigation {
+        display: none;
+    }
+    /* Grid */
+    .gridwrapper {
+        display: block;
+    }
+    /* first content */
+    .first-content-container {
+        margin: 0;
+        display: block;
+    }
+    /* Second content */
+    .second-content-container {
+        display: block;
+    }
+    .second-image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* thrid content */
+    .third-content-container {
+        display: block;
+    }
+    .third-content-container p {
+        margin-bottom: 1em;
+    }
+    /* Footer */
+    .footer-content {
+        display: block;
+    }
+    .trivsel, .indeklima, .dinarbejdsplads, .arbejdsmiljøarbejdet {
+        margin-bottom: 2em;
+    }
+}
+/* ------------------------------ */
+/* ---------Media querys--------- */
+/* ------------------------------ */
+@media only screen and (max-width: 850px) {
+    /* second content */
+    #second-rightside-image {
+        display: none;
+    }
+    .second-content-text {
+        grid-column: 1 / 6;
+    }
+    /* third content */
+    .third-content-container {
+        display: block;
+    }
+    .third-content-container p {
+        margin-bottom: 3em;
+    }
+}
+/* ------------------------------ */
+/* ---------Media querys--------- */
+/* ------------------------------ */
+@media only screen and (max-width: 1180px) {
+    /* First content */
+    .first-content-container {
+        display: block;
+    }
+    .first-content-container figcaption {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+    .first-content-container figcaption h2 {
+        font-size: 2em;
+    }
+    .first-content-container figcaption p {
+        font-size: 1em;
+    }
+    /* Second content */
+    .second-image-grid {
+        grid-column: 1 / 6;
+    }
+}
